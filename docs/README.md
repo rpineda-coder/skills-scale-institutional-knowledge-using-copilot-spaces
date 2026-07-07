@@ -18,6 +18,22 @@ OctoAcme operates a structured five-phase project lifecycle designed to deliver 
 
 ---
 
+## OctoAcme Project Management Processes Summary
+
+### Lifecycle & Workflows
+
+OctoAcme operates a structured five-phase project lifecycle: **Initiation**, **Planning**, **Execution**, **Release**, and **Close & Retrospective**. During **Initiation**, teams validate business need by creating a lightweight Project One-pager that captures the problem statement, success metrics, stakeholders, and resource needs. Once approved, the **Planning** phase breaks work into shippable increments with prioritized backlog items, acceptance criteria, and a Definition of Done. The **Execution** phase emphasizes iterative delivery through daily standups, weekly delivery syncs, and a GitHub Projects board with columns spanning Backlog → Ready → In Progress → In Review → QA → Done. Pull requests follow strict conventions (≤400 lines when possible) with automated testing, linting, and at least one approval before merging. **Release** requires passing CI/security scans, smoke testing in staging, and a documented rollback plan, followed by stakeholder announcements. Finally, teams hold **retrospectives** after each sprint or milestone to capture learnings and drive continuous improvement through prioritized action items.
+
+### Core Roles & Communication Cadence
+
+OctoAcme defines clear ownership through four primary personas: **Project Managers** coordinate delivery, manage schedules, risks, and communications; **Product Managers** define what to build, prioritize the backlog, and measure outcomes; **Developers** implement features, write tests, and identify technical risks; and **QA/Testing** validates quality against acceptance criteria. This clarity prevents silos and enables focused accountability. Communication is structured and consistent: teams conduct daily standups (15 min) focused on progress and blockers, weekly syncs between PM and Product Manager, twice-weekly delivery team standups, and monthly stakeholder updates. Ad-hoc escalation paths exist for blockers—escalating from team-level triage through the PM, Product Lead, and finally to the Sponsor for business-impacting issues. A single source of truth (project README or release doc) ensures all stakeholders access current status without confusion.
+
+### Quality Assurance & Risk Management
+
+Quality is embedded throughout execution via **unit tests** for new logic, **integration tests** where applicable, **end-to-end smoke tests** for critical flows before release, and **security scanning in CI**. Manual QA validates feature acceptance when needed. To manage uncertainty, OctoAcme maintains a **Risk Register** (updated weekly) capturing ID, description, impact, likelihood, owner, and mitigation plan. Risks are identified during planning and ongoing execution, assessed for priority, mitigated through proactive actions, and monitored at weekly syncs. The team uses **velocity and burndown tracking**, monitors **success metrics** defined in the Project One-pager, and leverages **dashboards** for key signals (errors, latency, usage). This data-informed approach enables evidence-based decisions and rapid iteration—core to OctoAcme's customer-first, psychological-safe culture.
+
+---
+
 ## Project Lifecycle at a Glance
 
 OctoAcme's five-phase approach ensures alignment, quality, and accountability:
